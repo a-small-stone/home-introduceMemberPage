@@ -1,0 +1,2 @@
+# home
+Being is beautiful.
