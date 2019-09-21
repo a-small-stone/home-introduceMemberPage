@@ -16,12 +16,23 @@ img {
 }
 
 
+/* スナップの設定 */
+.scroll-container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+.scroll-child {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
 /* モバイル版レイアウト */
 @media screen and (max-width: 767px) {
 
   /* 1ページ目の設定 */
   .l-top {
-    height: 600px;
+    height: 100vh;
   }
   .l-header {
     height: 70px;
@@ -38,9 +49,6 @@ img {
     background: -webkit-linear-gradient(to right, rgb(252, 206, 158), rgb(240, 145, 47));
     background: linear-gradient(to right, rgb(252, 206, 158), rgb(240, 145, 47));
   }
-  .l-main {
-    height: 500px;
-  }
   .l-intro-title {
     position: relative;
     height: 50px;
@@ -54,7 +62,7 @@ img {
   .l-avatars {
     position: relative;
     margin-top: 30px;
-    height: calc(600px - 70px - 80px - 50px - 30px);
+    height: calc(100vh - 70px - 80px - 50px - 30px);
   }
   .l-avatar {
     height: 120px;
@@ -68,12 +76,12 @@ img {
   }
   .l-yuna {
     position: absolute;
-    top: calc((600px - 70px - 80px - 50px - 30px - 120px - 50px) / 2);
+    top: calc((100vh - 70px - 80px - 50px - 30px - 120px - 50px) / 2);
     left: 10px;
   }
   .l-kura {
     position: absolute;
-    top: calc((600px - 70px - 80px - 50px - 30px - 120px - 50px) / 2);
+    top: calc((100vh - 70px - 80px - 50px - 30px - 120px - 50px) / 2);
     right: 10px;
   }
   .l-yoshino {
@@ -118,7 +126,7 @@ img {
   .l-introduction {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 100vh;
     overflow: hidden;
   }
   .l-intro-yoshino {
