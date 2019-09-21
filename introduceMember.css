@@ -16,4 +16,197 @@ img {
 }
 
 
-/* ここから */
+/* モバイル版レイアウト */
+@media screen and (max-width: 767px) {
+
+  /* 1ページ目の設定 */
+  .l-top {
+    height: 600px;
+  }
+  .l-header {
+    height: 70px;
+  }
+  .l-page-title {
+    width: 100%;
+    height: 80px;
+  }
+  .l-page-title h2 {
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background: -webkit-linear-gradient(to right, rgb(252, 206, 158), rgb(240, 145, 47));
+    background: linear-gradient(to right, rgb(252, 206, 158), rgb(240, 145, 47));
+  }
+  .l-main {
+    height: 500px;
+  }
+  .l-intro-title {
+    position: relative;
+    height: 50px;
+  }
+  .l-main h4 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .l-avatars {
+    position: relative;
+    margin-top: 30px;
+    height: calc(600px - 70px - 80px - 50px - 30px);
+  }
+  .l-avatar {
+    height: 120px;
+    width: 120px;
+  }
+  .l-chomo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .l-yuna {
+    position: absolute;
+    top: calc((600px - 70px - 80px - 50px - 30px - 120px - 50px) / 2);
+    left: 10px;
+  }
+  .l-kura {
+    position: absolute;
+    top: calc((600px - 70px - 80px - 50px - 30px - 120px - 50px) / 2);
+    right: 10px;
+  }
+  .l-yoshino {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .l-avatar img {
+    position: relative;
+    top: -1px;
+    left: -1px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: solid 1px rgb(41, 158, 184);
+    box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  }
+  .avatar-after::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    height: 122px;
+    width: 122px;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: 9;
+  }
+  .avatar-after:hover::after {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .avatar-after:active::after {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+
+  /* 個人の1ページの設定 */
+  .l-introduction {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
+  .l-intro-yoshino {
+    background-image: url(yoshino-background.jpg);
+    background-size:cover;
+  }
+  .intro-background-after::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 0;
+  }
+  .l-profile {
+    position: relative;
+    height: 150px;
+    width: 200px;
+  }
+  .l-profile .l-avatar {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    z-index: 1;
+  }
+  .l-profile .l-avatar img {
+    border-style: none;
+  }
+  .l-name {
+    position: absolute;
+    width: 200px;
+    padding-left: 60px;
+    left: -50px;
+    transform: rotate(-30deg);
+    z-index: 2;
+  }
+  .l-name h5 {
+    font-size: 24px;
+    margin-left: -60px;
+    padding-left: 50px;
+    border-top: solid 2px #29238e;
+    border-bottom: solid 2px #29238e;
+    background-color: rgb(207, 158, 255);
+
+
+    /* background: -webkit-repeating-linear-gradient(-45deg, #fce7ff, #fce7ff 3px,rgb(242, 199, 255) 3px, rgb(242, 199, 255) 7px);
+    background: repeating-linear-gradient(-45deg, #fce7ff, #fce7ff 3px,rgb(242, 199, 255) 3px, rgb(242, 199, 255) 7px); */
+    /* color: #6cb4e4;
+    margin-left: -60px;
+    padding-left: 50px;
+    border-top: solid 2px #6cb4e4;
+    border-bottom: solid 2px #6cb4e4;
+    background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px); */
+  }
+  .l-subtitle {
+    position: absolute;
+    top: 140px;
+    right: 0;
+    transform: rotate(-5deg);
+    display: inline-block;
+    width: 300px;
+    z-index: 4;
+  }
+  .l-subtitle h3 {
+    text-align: center;
+    line-height: 32px;
+    font-size: 28px;
+    color: white;
+    font-family: "HG行書体","HGP行書体",cursive;
+    -webkit-box-reflect: below -10px -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0) 10%,rgba(0, 0, 0, 0.6));
+  }
+  .l-subtitle span {
+    font-size: 32px;
+    color: #29238e;
+    -webkit-text-stroke: 1px rgb(238, 179, 255);
+  }
+  .l-introText {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 150px;
+  }
+  .l-introText p {
+    position: relative;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    z-index: 2;
+  }
+}
