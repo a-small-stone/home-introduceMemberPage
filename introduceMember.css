@@ -121,18 +121,8 @@ img {
     overflow: hidden;
   }
   .l-intro-yoshino {
-    background-image: url(yoshino-background.jpg);
-    background-size:cover;
-  }
-  .intro-background-after::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    z-index: 0;
+    background: -webkit-linear-gradient(to bottom, rgb(180, 223, 157), rgb(93, 210, 38));
+    background: linear-gradient(to bottom, rgb(180, 223, 157), rgb(93, 210, 38));
   }
   .l-profile {
     position: relative;
@@ -141,7 +131,7 @@ img {
   }
   .l-profile .l-avatar {
     position: absolute;
-    right: 20px;
+    left: 30px;
     bottom: 10px;
     z-index: 1;
   }
@@ -150,30 +140,18 @@ img {
   }
   .l-name {
     position: absolute;
+    top: 50px;
+    right: 20px;
     width: 200px;
-    padding-left: 60px;
-    left: -50px;
-    transform: rotate(-30deg);
+    /* transform: rotate(-5deg); */
     z-index: 2;
   }
   .l-name h5 {
-    font-size: 24px;
-    margin-left: -60px;
-    padding-left: 50px;
-    border-top: solid 2px #29238e;
-    border-bottom: solid 2px #29238e;
-    background-color: rgb(207, 158, 255);
-
-
-    /* background: -webkit-repeating-linear-gradient(-45deg, #fce7ff, #fce7ff 3px,rgb(242, 199, 255) 3px, rgb(242, 199, 255) 7px);
-    background: repeating-linear-gradient(-45deg, #fce7ff, #fce7ff 3px,rgb(242, 199, 255) 3px, rgb(242, 199, 255) 7px); */
-    /* color: #6cb4e4;
-    margin-left: -60px;
-    padding-left: 50px;
-    border-top: solid 2px #6cb4e4;
-    border-bottom: solid 2px #6cb4e4;
-    background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
-    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px); */
+    font-size: 40px;
+    line-height: 45px;
+    color: white;
+    -webkit-box-reflect: below -10px -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0) 10%,rgba(0, 0, 0, 0.4));
+    /* -webkit-text-stroke: 2px black; */
   }
   .l-subtitle {
     position: absolute;
@@ -186,7 +164,7 @@ img {
   }
   .l-subtitle h3 {
     text-align: center;
-    line-height: 32px;
+    line-height: 34px;
     font-size: 28px;
     color: white;
     font-family: "HG行書体","HGP行書体",cursive;
@@ -195,7 +173,6 @@ img {
   .l-subtitle span {
     font-size: 32px;
     color: #29238e;
-    -webkit-text-stroke: 1px rgb(238, 179, 255);
   }
   .l-introText {
     width: 95%;
