@@ -17,12 +17,12 @@ img {
 
 
 /* スナップの設定 */
-.scroll-container {
+.scrollsnap-container {
   overflow: auto;
   scroll-snap-type: y mandatory;
   height: 100vh;
 }
-.scroll-child {
+.scrollsnap-child {
   scroll-snap-align: start;
   height: 100vh;
 }
@@ -98,7 +98,7 @@ img {
     height: 120px;
     width: 120px;
     border-radius: 50%;
-    border: solid 1px rgb(41, 158, 184);
+    border: solid 1px rgb(240, 145, 47);
     box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.3);
   }
   .avatar-after::after {
@@ -140,7 +140,7 @@ img {
   }
   .l-profile .l-avatar {
     position: absolute;
-    left: 30px;
+    left: 35px;
     bottom: 10px;
     z-index: 1;
   }
@@ -150,7 +150,7 @@ img {
   .l-name {
     position: absolute;
     top: 50px;
-    right: 20px;
+    left: 170px;
     width: 200px;
     /* transform: rotate(-5deg); */
     z-index: 2;
